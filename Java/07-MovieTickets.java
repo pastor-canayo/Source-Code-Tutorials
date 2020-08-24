@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InputExamples {
+public class MovieTickets {
 
 	public static void main(String[] args) {
 
