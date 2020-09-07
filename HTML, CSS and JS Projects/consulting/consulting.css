@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* global styles */
+img{
+  width: 100%;
+  display: block;
+}
+ul li{
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+}
+
+
+/* wrapper */
+
+.wrapper{
+  background: #1c3144;
+  padding: 20px;
+  color: white;
+
+}
+.light{
+  color: #2a9134;
+}
+.wrapper > .brand{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper > .nav-links{
+  padding: 8px 0px;
+  color: white;
+}
+ul li a{
+  display: block;
+  color: white;
+  font-size: 15px;
+  padding: 2px 0px;;
+}
+.brand-login{
+  color: #2a9134;
+}
+
+/* Banner section */
+
+.banner{
+  height: 100vh;
+  background: url('../images/skiing.jpg')no-repeat center/cover fixed;
+    display: flex;
+}
+.banner-footer{
+
+
+  text-align: center;
+  background: #fff;
+  opacity: 0.8;
+  padding: 40px;
+  align-self: flex-end;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner-footer h3{
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.banner-footer h1{
+  color: #0c3c60;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/* cards section */
+
+.cards{
+  padding: 10px 0;
+
+}
+.cards-content{
+  max-width: 90vh;
+  width: 80%;
+  margin: 0 auto;
+
+
+}
+.services{
+  text-align: center;
+  background: #1c3144;
+  margin: 70px 0;
+
+  color: white;
+}
+.services h1{
+  text-transform: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+.services p{
+  padding: 10px;
+}
+.services .btn, .about .btn{
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(30,171,199,1);
+  margin: 30px;
+
+}
+
+/* about */
+
+.about{
+  padding: 40px 0;
+  background: #9fb4c7;
+
+}
+.about-content{
+  width: 80%;
+  max-width: 90vh;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-content h1{
+  font-size: 40px;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #0c3c60;
+}
+.about-content p{
+  font-size: 13px;
+}
+
+/* contact form */
+
+.contact{
+  padding: 40px 0;
+  background: #1c3144;
+}
+.contact h1{
+  font-size: 40px;
+  padding: 20px;
+  text-transform: uppercase;
+
+}
+.contact h1, .contact p{
+  text-align: center;
+  color: #fff;
+}
+.contact-form{
+  width: 80%;
+  max-width: 100vh;
+  margin: 50px auto;
+
+
+}
+.form-box{
+  padding: 25px;
+}
+label, #msg-box{
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+.field, #msg-box{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+#msg-box{
+margin-top: 25px;
+height: 100px;
+}
+span{
+  color: gold;
+}
+.btn{
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(30,171,199,1);
+
+}
+.google-map{
+  display: none;
+}
+
+/* footer */
+
+.footer{
+  background: #1c3144;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 15px;
+}
