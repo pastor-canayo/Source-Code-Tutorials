@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+img{
+  width: 100%;
+  display: block;
+}
+ul li{
+  list-style: none;
+}
+span{
+  color: #fc5c65;
+}
+
+/* header */
+
+.header{
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/student.jpg')center/cover no-repeat;
+}
+.header-content{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.logo{
+  font-size: 13px;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links li{
+  padding-right: 10px;
+}
+
+/* banner */
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.banner h2{
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.banner p{
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* about */
+
+.about{
+  padding: 20px 40px;
+}
+.about-content h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.para p{
+  font-size: 17px;
+}
+
+/* services */
+
+.services{
+  padding: 40px;
+}
+ .service-title h1{
+   font-size: 25px;
+   color: #fc5c65;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ .service-content-info h1{
+    color: #fc5c65;
+    padding: 20px 0;
+ }
+ .service-content-info h1, .service-content-info p{
+   text-align: center;
+ }
+
+ /* footer */
+
+ footer{
+   background: #000;
+   color: #fff;
+   text-align: center;
+   padding: 30px;
+ }
+
+ @media screen and (min-width: 556px){
+   .about-content h1{
+     text-align: center;
+   }
+   .service-content{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+   .service-content-info{
+     flex: 0 0 calc(50% - 2rem);
+   }
+   .banner h2{
+     font-size: 40px;
+   }
+   .banner p{
+     font-size: 20px;
+   }
+   .logo{
+     font-size: 15px;
+   }
+   .nav-links li{
+     font-size: 20px;
+   }
+ }
+
+ @media screen and (min-width: 992px){
+   .header-content{
+     width: 1000px;
+     margin: 0 auto;
+   }
+   .about{
+     width: 1000px;
+     margin: 0 auto;
+   }
+   .services{
+     width: 1000px;
+     margin: 0 auto;
+   }
+   .service-content{
+     display: flex;
+     justify-content: space-between;
+
+   }
+   .service-content-info{
+      flex: 0 0 calc(25% - 2rem);
+   }
+   .service-content-info p{
+      padding: 0 20px;
+   }
+ }
