@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+ul li a{
+  list-style:none;
+  text-decoration: none;
+  color: #fff;
+}
+ul li a:hover{
+  color: #fc5c65;
+  cursor: pointer;
+}
+.wrapper{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/skiing.jpg")center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.nav{
+  background: #111111;
+  color: #fff;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.nav-links{
+
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 13px;
+}
+.fab{
+  display: none;
+}
+span{
+  color: #fc5c65;
+}
+/* banner */
+
+.banner{
+  flex: 1 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.banner-content h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 1.3;
+  padding-bottom: 10px;
+}
+.banner-content p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.5;
+}
+.myform{
+  margin: 30px 0;
+  width: 100%;
+}
+.field{
+  width: 50%;
+  height: 45px;
+  background: #000;
+  border: 1px solid #fc5c65;
+  outline: none;
+}
+::placeholder{
+  color: white;
+  padding: 15px;
+}
+.btn{
+  padding: 11px;
+  border-radius: 40px;
+  font-size: 20px;
+  background: #fc5c65;
+  outline: none;
+}
+/* footer */
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background: #111111;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 776px){
+  .nav{
+    padding: 25px 40px;
+  }
+  .nav-links{
+    margin: 10px;
+  }
+  .fab{
+    display: unset;
+  }
+  .nav-links li{
+    font-size: 15px;
+  }
+  .nav-logo h1{
+    font-size: 30px;
+  }
+  .myform{
+    width: 50vw;
+  }
+  .banner-content h1{
+    font-size: 35px;
+  }
+  .banner-content p{
+    font-size: 18px;
+  }
+
+}
+@media screen and (min-width: 992px){
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links li:hover{
+    color: #fc5c65;
+    cursor: pointer;
+  }
+  .banner{
+    padding: 0px 80px;
+  }
+  .banner-content h1{
+    font-size: 71px;
+  }
+  .banner-content p{
+    font-size: 24px;
+  }
+  .myform{
+    width: 100%;
+  }
+  .field{
+    background: transparent;
+    border: 1px solid #000;
+  }
+  .field:hover{
+    background: #000;
+    border-bottom: 5px solid #fff;
+  }
+  ::placeholder{
+    color: white;
+    padding: 15px;
+  }
+  .btn{
+    width: 20%;
+    padding: 13px;
+    font-size: 20px;
+  }
+  .btn:hover{
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+  }
+}

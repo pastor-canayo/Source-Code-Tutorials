@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+ul li{
+    list-style:none;
+}
+ul li a{
+
+  text-decoration: none;
+  color: #fff;
+}
+ul li a:hover{
+  color: #fc5c65;
+  cursor: pointer;
+}
+
+.nav{
+  background: #111111;
+  color: #fff;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.nav-links{
+
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 13px;
+}
+.fab{
+  display: none;
+}
+span{
+  color: #fc5c65;
+}
+
+/* contact- */
+
+.contact-main{
+  padding: 40px;
+}
+.contact-title{
+  padding-bottom: 20px;
+  text-align: center;
+  color: #fc5c65;
+  font-size: 22px;
+}
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 25px;
+  padding: 5px;
+}
+textarea{
+  height:100px;
+}
+form button{
+  font-size: 17px;
+  margin: 10px auto;
+  background: #fc5c65;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid green;
+  display: block;
+  width: 100px;
+
+}
+form button:hover{
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+.contact-info{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/skiing.jpg")no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-info-title h1{
+  font-size: 30px;
+    color: #fc5c65;
+    padding-bottom: 10px;
+}
+.contact-info-para p{
+  color: #fff;
+}
+.icons{
+  color: white;
+  display: flex;
+  margin: 10px 0;
+
+}
+.icons li i{
+  margin-right: 10px;
+}
+.icons .fab{
+  display: unset;
+}
+.last-content{
+  color: #fff;
+}
+.footer{
+  padding: 18px;
+  text-align: center;
+  color: #fff;
+  background: #111111;
+  font-size: 13px;
+
+}
+
+@media screen and (min-width: 576px){
+  .nav{
+    padding: 25px 40px;
+  }
+  .nav-links{
+    margin: 10px;
+  }
+  .fab{
+    display: unset;
+  }
+  .nav-links li{
+    font-size: 15px;
+  }
+  .nav-logo h1{
+    font-size: 30px;
+  }
+
+  .contact-container-content{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+  }
+  .contact-main, .contact-info{
+    flex: 0 0 calc(50%);
+  }
+
+}
+@media screen and (min-width: 992px){
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-links li:hover{
+    color: #fc5c65;
+    cursor: pointer;
+  }
+  .myForm-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-main{
+    padding: 140px;
+  }
+  .contact-info-title h1{
+    font-size: 40px;
+    padding: 30px 0;
+
+  }
+  .contact-info-para p, .last-content{
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 30px 0;
+  }
+  .icons{
+    font-size: 30px;
+    padding: 30px 0;
+
+  }
+
+}
