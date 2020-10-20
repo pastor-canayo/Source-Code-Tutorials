@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/grids.css">
+    <title></title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-icons">
+        <a href="#" class="bar-icon">
+          <img src="images/bars.png" alt="">
+        </a>
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="">
+        </a>
+        <ul class="media-icons">
+          <li class="download">dn</li>
+          <li class="youtube">yt</li>
+          <li class="facebook">fb</li>
+          <li class="twitter">tw</li>
+        </ul>
+      </div>
+  </nav>
+      <section id="banner">
+        <div class="banner-title">
+          <h1 class="main-title"><span>profound</span>grid</h1>
+          <div class="underline"></div>
+          <p>A responsive grid system for fixed and fluid layouts.
+          Built in SCSS, it gives you flexibility and full control</p>
+        </div>
+        <article class="content">
+          <div class="development responsive">
+            <img src="images/precise.png" class="responsive-img" alt="">
+            <h2>Responsive</h2>
+            <p>Make the grid fluid or fixed and add per-media layouts as
+              needed. Change the column and gutter widths
+              and remove or add columns as needed.</p>
+          </div>
+          <div class="development semantic">
+            <img src="images/semantic.png" class="responsive-img" alt="">
+            <h2>Semantic</h2>
+            <p>The grid keeps your markup semantic and works without any
+              "grid_x" classes. Unless you want to use them,
+              in which case they are included.</p>
+          </div>
+          <div class="development precise">
+            <img src="images/precise.png" class="responsive-img" alt="">
+            <h2>Precise</h2>
+            <p>Profound Grid uses negative margins to calculate columns.
+               Unlike with other grid systems, fluid layouts will look
+               exactly the same in every browser.</p>
+          </div>
+        </article>
+      </section>
 
+      <section class="portfolio">
+        <div class="portfolio-heading">
+          <h1 class="heading">Portfolio</h1>
+        </div>
+        <div class="portfolio-grid">
+          <div class="grids-content portfolio1">
+            <img src="images/apple.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Fixed</h3>
+            <p class="subtitle-para">Standard fixed grid layout. Define amount of columns,
+              column width and gutter width</p>
+          </div>
+          <div class="grids-content portfolio2">
+            <img src="images/day.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Responsive Fixed</h3>
+            <p class="subtitle-para">Fixed grid layout, that adapts to the available display width.</p>
+          </div>
+          <div class="grids-content portfolio3">
+            <img src="images/doctor.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Fluid</h3>
+            <p class="subtitle-para">A fluid grid that uses percentages of the total available width for the columns.</p>
+          </div>
+          <div class="grids-content portfolio4">
+            <img src="images/flowers.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Max-Width Fluid</h3>
+            <p class="subtitle-para">A fluid grid, that has a maximum total width.</p>
+          </div>
+          <div class="grids-content portfolio5">
+            <img src="images/juggler.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Responsive Fluid</h3>
+            <p class="subtitle-para">A fluid grid that changes its layout at certain break points</p>
+          </div>
+          <div class="grids-content portfolio6">
+            <img src="images/kid.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Multiple Grids</h3>
+            <p class="subtitle-para">Different grid layouts on the same page.</p>
+          </div>
+          <div class="grids-content portfolio7">
+            <img src="images/motor.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Nested Grids</h3>
+            <p class="subtitle-para">We heard you like grids, so we put a grid in your grid in your grid.</p>
+          </div>
+          <div class="grids-content portfolio8">
+            <img src="images/person.jpg" class="portfolio-img" alt="">
+            <h3 class="subtitle">Push/Pull</h3>
+            <p class="subtitle-para">Add empty colums into the grid,
+              or swap the order of columns from how they appear in the source.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="downloads">
+        <div class="portfolio-heading">
+          <div class="separator"></div>
+          <h1 class="heading">Downloads</h1>
+        </div>
+        <div class="download-content">
+
+            <a href="#">Download .zip File</a>
+
+            <a href="#">Source on Github</a>
+
+        </div>
+
+        <div class="separator2"></div>
+
+      </section>
+
+      <section class="references">
+        <div class="background-grey">
+          <div class="portfolio-heading">
+            <h1 class="heading">Reference</h1>
+          </div>
+          <div class="reference-content main">
+            <div class="main-text">
+              <h3 class="main-text-heading">Total Width</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Total Columns</h3>
+              <a class="information"> $total_columns: 12; // number</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Gutter Width</h3>
+              <a class="information">$gutter_width: 1%;  // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Container Margin</h3>
+              <a class="information">$container_margin: 1%;  // px or %</a>
+              <p class="para">Builds helper classes that can used to build the grid
+                 in the markup. Default classnames are: .container, .col1 - .colx, .push0 - .pushx</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Mixin: Container</h3>
+              <a class="information">//container()
+  .g             rid{@include container(); }</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Helper Classes</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Mixin: Helper Classes</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Mixin: Column</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Mixin: Push</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Mixin: Positions</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Defines the overall width of the grid. If set to 100% the grid becomes fluid.</p>
+            </div>
+            <div class="main-text">
+              <h3 class="main-text-heading">Mixin: Positions Legacy</h3>
+              <a class="information"> $total_width: 960px; // px or %</a>
+              <p class="para">Same as the "positions()" mixin, with an
+                additional parameter for the total amount of columns/elements
+                supported. The difference lies in the CSS output, that avoids
+                the use of the nth-child() selector which isn't natively
+                supported in older browsers.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </section>
+
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-logo center">
+              <p class="main-text">Built By</p>
+              <img src="images/logo.png" alt="">
+              <p class="main-subtext">Profound</p>
+
+            </div>
+            <div class="separator"></div>
+            <div class="footer-icons">
+              <div class="icons">
+                <a href="#">fb</a>
+                <a href="#">tw</a>
+              </div>
+              <p>Copyright &copy; 2009-2012 profound Studio LLC.
+              All rights reserved</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </body>
+</html>
