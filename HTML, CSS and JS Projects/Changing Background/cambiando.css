@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* wrapper */
+
+#wrapper{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/soccer.jpg')no-repeat center/cover fixed;
+  display: flex;
+  flex-flow: column;
+}
+.content-tile{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  color: #ffc600;
+}
+.wrapper-end{
+display: flex;
+background: #ffc600;
+opacity: 0.8;
+}
+.img-1, .img-2{
+padding: 5px;
+}
+.img-3, .img-4{
+  display: none;
+}
+span{
+  animation: pulsing 1s infinite;
+}
+@keyframes pulsing{
+  0%, 100% {color: #e2ee2b;}
+  35% {color: #df2302;}
+  55% {color: #4dbed6;}
+  65% {color: purple;}
+}
+
+@media screen and (min-width: 576px){
+  .wrapper-end{
+    display: flex;
+    align-items: center;
+  }
+  .img-1, .img-2, .img-3{
+  padding: 40px;
+  }
+  .img-3{
+    display: unset;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .wrapper-end{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .img-1, .img-2, .img-3, .img-4{
+  padding: 20px;
+  }
+  .img-3, .img-4{
+    display: unset;
+  }
+  .images{
+    max-width: 200px;
+    height: 100%;
+    margin: auto 0;
+  }
+}
